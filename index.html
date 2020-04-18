@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SurveyForm</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <img src="Imagenes/images.jpg">
+            <h1 id="title">Medellín Joven</h1>
+            <hr>
+            <p id="description">La Era Digital, métale moral al asunto<br><em>Sumate a la red de jóvenes que les apasiona las TICS en Medellín</em><br>Inscríbete y haz parte de los que quieren gritarle al mundo que es lo que te gusta</p>
+        </header>
+
+        <main id="main">
+            <form id="survey-form">
+                <div>
+                    <label for="nombre" id="name-label">Nombre</label>
+                    <input type="text" id="name" name="name" class="form" required
+                        placeholder="Ingrese su nombre completo">
+                </div>
+
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email" class="form" required placeholder="Ingrese su correo electrónico">
+                </div>
+
+                <div>
+                    <label for="numero" id="number-label">Número</label>
+                    <input type="number" id="number" min="7" max="7" class="form" placeholder="Ingrese su número de contacto">
+                </div>
+
+                <div id="parraf">
+                    <p>Máximo nivel de escolaridad alcanzado</p>
+                    <hr>
+                    <select id="dropdown" class="form">
+                        <option>Selecciona tu perfil</option>
+                        <option value="Bachiller">Bachiller</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Profesional">Profesional</option>
+                    </select>
+                    </label>
+                </div>
+
+                <div id="parraf">
+                    <p>Seleccione su género</p>
+                    <hr>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="gen" value="masculino" class="radio">
+
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" name="genero" id="gen" value="femenino" class="radio">
+
+                    <label for="masculino">CIS</label>
+                    <input type="radio" name="genero" id="gen" value="cis" class="radio">
+                </div>
+
+                <div id="parraf">
+                    <p>¿Qué tipo de herramientas tecnológicas usas en el día a día?</p>
+                    <hr>
+                    <label><input type="checkbox" name="gustos" class="check" value="pizarra-digital">Pizarra
+                        Digital</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="smartphones">Smartphones</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="asistentes-virtuales">Asistentes
+                        virtuales</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="tablets">Tablets</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="relojes-inteligetes">Relojes
+                        inteligentes</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="redes-sociales">Redes
+                        sociales</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="pag-web">Páginas web</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="libros-electronicos">Libros
+                        electrónicos</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="Apps">Apps</label>
+                    <label><input type="checkbox" name="gustos" class="check" value="videos-streaming">Videos en
+                        streaming</label>
+
+                </div>
+
+                <div id="parraf">
+                    <p>¿Qué ideas, recomendaciones, comentarios, preguntas o sugerencias tienes?</p>
+                    <hr>
+                    <textarea name="texto" id="texto" cols="30" rows="10"
+                        placeholder="Escribe aquí" class="texta"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" value="Enviar" class="boton">Enviar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
